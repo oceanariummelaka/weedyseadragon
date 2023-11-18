@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>WebAR Sea Dragon</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="./styles.css">
+    
+   
+ <script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.1.3/webcomponents-loader.js"></script>
+ <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
+ <script src="https://unpkg.com/resize-observer-polyfill@1.5.0/dist/ResizeObserver.js"></script> 
+ <script src="https://unpkg.com/focus-visible@5.0.2/dist/focus-visible.js" defer></script>
+
+  </head> 
+<body>
+  <div class="row">
+  <div id="card">
+    <model-viewer camera-controls touch-action="pan-y" 
+                  autoplay ar ar-modes="webxr scene-viewer" 
+                  scale="0.1 0.1 0.1" 
+                  shadow-intensity="0"
+                  src="assets/asset.glb"
+                  ios-src="assets/asset.usdz"
+                  alt="A 3D model of Weedy Sea Dragon">
+
+    </model-viewer>
+ <section class="attribution">
+      <span>
+        <h1>Weedy DragonXR</h1>
+        <span>Click AR if your device not<br>support XR<img src="modelviewer.png" alt="sketchfab logo"><a href="https://oceanariummelaka.github.io/weedyseadragonplus/" target="_blank"><h1>AR</h1></a></span>Then point your device to QR Marker and move it slowly.
+<p><h2>Weedy Sea Dragon</h2><br> Weedy sea dragons are named for the weed-like growth on their bodies. This camouflage hides them as they move among the seaweed beds where they live. The weedy sea dragon is the aquatic emblem for the state of Victoria Australia.
+<br>Weedy sea dragons can reach 45 cm in length. They feed on tiny crustaceans and other zooplankton, which they suck into the end of their long tube like nose. 
+<br>They don't have a tail that can wrap around and hold on to things the way a seahorse can. They swim in shallow reefs and weed beds, and look like weeds drifting over bare sand.</p>
+<p>Click🔈if sound not load<a href="https://oceanariummelaka.github.io/weedyseadragon/" target="_blank"><h1>🔈</h1></a></p>
+      </span>
+
+     </section>
+  
+  <!-- 💁 Include both scripts below to support all browsers! -->
+
+  <!-- Loads <model-viewer> for modern browsers: -->
+  <script type="module"
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js">
+  </script>
+
+  <!-- Loads <model-viewer> for old browsers like IE11: -->
+  <script nomodule
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
+  </script>
+<audio src="music.mp3" autoplay loop></audio>
+<footer>
+     <p>WebAR Coral Wonderland © 2023</p>
+    </footer>
+    </body>
+    </body>
+</html>
